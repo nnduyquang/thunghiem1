@@ -1,0 +1,46 @@
+.wrap-choose {
+  padding: 0 10px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  .one-panel {
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.config-page {
+  .one-component {
+    select.select-type {
+      margin-bottom: 10px;
+    }
+    .choose-style-component {
+      padding: 0 10px;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: repeat(1, 200px);
+      .one-style {
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    border: 1px solid #bee7ff;
+    padding: 10px;
+  }
+  a.add-component {
+    font-size: 30px;
+    display: block;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #3685ff;
+    margin-top: 10px;
+    padding-bottom: 7px;
+  }
+}
