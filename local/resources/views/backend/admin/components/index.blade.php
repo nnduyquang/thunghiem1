@@ -26,25 +26,25 @@
     @endif
     {{--{!! Form::open(array('route' => 'page.search','method'=>'POST','id'=>'formSearchPage')) !!}--}}
     {{--<div class="col-md-12">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-6">--}}
-                {{--{!! Form::text('txtSearch',null, array('class' => 'form-control','id'=>'txtSearch')) !!}--}}
-            {{--</div>--}}
-            {{--<div class="col-md-6">--}}
-                {{--{!! Form::button('Tìm Kiếm', array('id' => 'btnSearchPage','class'=>'btn btn-primary')) !!}--}}
-            {{--</div>--}}
+    {{--<div class="row">--}}
+    {{--<div class="col-md-6">--}}
+    {{--{!! Form::text('txtSearch',null, array('class' => 'form-control','id'=>'txtSearch')) !!}--}}
+    {{--</div>--}}
+    {{--<div class="col-md-6">--}}
+    {{--{!! Form::button('Tìm Kiếm', array('id' => 'btnSearchPage','class'=>'btn btn-primary')) !!}--}}
+    {{--</div>--}}
 
-        {{--</div>--}}
+    {{--</div>--}}
     {{--</div>--}}
     {{--{!! Form::close() !!}--}}
     {{--@if(!empty($keywords))--}}
-        {{--<div id="showKeySearch" class="col-md-12">--}}
-            {{--<div class="row wrap-search">--}}
-                {{--<i class="fa fa-caret-right" aria-hidden="true"></i>{{$keywords}} <a--}}
-                        {{--href="{{ route('page.search') }}">X</a>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--{{ Form::hidden('hdKeyword', $keywords) }}--}}
+    {{--<div id="showKeySearch" class="col-md-12">--}}
+    {{--<div class="row wrap-search">--}}
+    {{--<i class="fa fa-caret-right" aria-hidden="true"></i>{{$keywords}} <a--}}
+    {{--href="{{ route('page.search') }}">X</a>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--{{ Form::hidden('hdKeyword', $keywords) }}--}}
     {{--@endif--}}
     <div class="wrap-index">
         <div class="col-md-12">
@@ -53,30 +53,27 @@
                     <th>TT</th>
                     <th>Tên Components</th>
                     <th>Nội dung</th>
-                    <th>Loại</th>
+                    <th>Hình ảnh</th>
                     <th width="280px">Action</th>
                 </tr>
-                {{--@foreach ($posts as $key => $data)--}}
-                    {{--<td>{{ ++$i }}</td>--}}
-                    {{--<td>{{ $data->title }}</td>--}}
-                    {{--<td>{{ $data->path }}</td>--}}
-                    {{--<td>{{ $data->is_active }}</td>--}}
-                    {{--<td>{{ $data->users->name }}</td>--}}
-                    {{--<td>{{ $data->created_at }}</td>--}}
-                    {{--<td>{{ $data->updated_at }}</td>--}}
-                    {{--<td>{{$data->is_active}}</td>--}}
-                    {{--<td>--}}
-                        {{--@permission(('page-edit'))--}}
-                        {{--<a class="btn btn-primary" href="{{ route('page.edit',$data->id) }}">Cập Nhật</a>--}}
-                        {{--@endpermission--}}
-                        {{--@permission(('page-delete'))--}}
-                        {{--{!! Form::open(['method' => 'DELETE','route' => ['page.destroy', $data->id],'style'=>'display:inline']) !!}--}}
-                        {{--{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}--}}
-                        {{--{!! Form::close() !!}--}}
-                        {{--@endpermission--}}
-                    {{--</td>--}}
-                    {{--</tr>--}}
-                {{--@endforeach--}}
+                @foreach ($components as $key => $data)
+                    <tr>
+                        <td>{{ ++$i }}</td>
+                        <td>{{ $data->name }}</td>
+                        <td>{{ $data->title }}</td>
+                        <td>{{ $data->image }}</td>
+                        <td>
+                            @permission(('page-edit'))
+                            <a class="btn btn-primary" href="{{ route('components.edit',$data->id) }}">Cập Nhật</a>
+                            @endpermission
+                            @permission(('page-delete'))
+                            {!! Form::open(['method' => 'DELETE','route' => ['components.destroy', $data->id],'style'=>'display:inline']) !!}
+                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                            {!! Form::close() !!}
+                            @endpermission
+                        </td>
+                    </tr>
+                @endforeach
             </table>
         </div>
     </div>

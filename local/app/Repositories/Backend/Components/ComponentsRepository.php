@@ -13,7 +13,22 @@ class ComponentsRepository extends EloquentRepository implements ComponentsRepos
         return \App\Component::class;
     }
 
+    public function createNewComponent($request)
+    {
+        $parameters = $this->_model->prepareParameters($request);
+        $result = $this->_model->create($parameters->all());
+    }
 
+    public function getAllComponents()
+    {
+        return $this->_model::orderBy('id', 'DESC')->get();
+    }
+
+    public function showEditComponent($id)
+    {
+        $data['component'] = $this->find($id);
+        return $data;
+    }
 
 
 }

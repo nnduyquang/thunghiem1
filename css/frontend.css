@@ -2,7 +2,6 @@
   font-family: UTMAVO;
   src: url("../fonts/utm-avo.ttf");
 }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -25,7 +24,7 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -47,11 +46,9 @@ img {
   background-color: inherit;
   border-radius: 0;
 }
-
 .card .card-body {
   padding: 0;
 }
-
 .card .card-footer {
   padding: 0;
   background-color: inherit;
@@ -73,12 +70,10 @@ img {
   z-index: 200000 !important;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  -webkit-transition: visibility .5s;
-  transition: visibility .5s;
+  transition: visibility 0.5s;
   visibility: visible;
   margin: 0 auto;
 }
-
 .phone_animation a {
   color: white;
 }
@@ -95,8 +90,7 @@ img {
   opacity: 0.5;
   -webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
           animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   border-color: #00aff2;
@@ -111,11 +105,10 @@ img {
   background-color: #00aff2;
   border-radius: 100%;
   border: 2px solid transparent;
-  opacity: .2;
+  opacity: 0.2;
   -webkit-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
           animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
 }
@@ -140,37 +133,34 @@ img {
   font-size: 30px;
   display: block;
 }
-
 @-webkit-keyframes coccoc-alo-circle-anim {
   0% {
     -webkit-transform: rotate(0) scale(0.5) skew(1deg);
-    -webkit-opacity: .1;
+    -webkit-opacity: 0.1;
   }
   30% {
     -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    -webkit-opacity: .5;
+    -webkit-opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
-    -webkit-opacity: .1;
+    -webkit-opacity: 0.1;
   }
 }
-
 @-webkit-keyframes coccoc-alo-circle-fill-anim {
   0% {
     -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: .2;
+    opacity: 0.2;
   }
   50% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
-    opacity: .2;
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: .2;
+    opacity: 0.2;
   }
 }
-
 @-webkit-keyframes coccoc-alo-circle-img-anim {
   0% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
@@ -194,23 +184,15 @@ img {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
   }
 }
-
 .m-category-layout {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .m-category-layout .m-item-category {
-  -ms-flex-preferred-size: 160px !important;
-      flex-basis: 160px !important;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-basis: 160px !important;
+  align-self: stretch;
+  flex: 1;
   border-bottom: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
 }
@@ -224,19 +206,12 @@ img {
 }
 
 .m-category-layout .m-item-category .m-item-category-0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .m-category-layout .m-item-category .m-item-category-0 a {
   text-align: center;
 }
-
 .m-category-layout .m-item-category .m-item-category-0 a span {
   width: 100%;
   display: block;
@@ -247,15 +222,14 @@ img {
     margin-top: 30px;
   }
 }
-
 /* Sidebar
 -----------------------------------------------------------------------------------------*/
 .menusign {
   display: block;
   width: 10px;
-  line-height: .3;
+  line-height: 0.3;
   font-size: 2em;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .menusign br {
@@ -270,22 +244,17 @@ img {
   height: 100%;
   width: 260px;
   background: white;
-  -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s, -webkit-box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 #f2b142, 0.6em 0 0 0 #f2b142;
   box-shadow: 0.5em 0 0 0 #f2b142, 0.6em 0 0 0 #f2b142;
 }
 
 .sidebar.closed {
   left: -260px;
-  -webkit-box-shadow: 0 0 0 #1ba8ff;
   box-shadow: 0 0 0 #1ba8ff;
 }
 
 .sidebar h2 {
-  padding: .5em;
+  padding: 0.5em;
   color: #1abc9c;
 }
 
@@ -367,7 +336,6 @@ This class is added to the container
 (#blurMe) when the sidebar is open.
 -----------------------------------*/
 .blurred {
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   -webkit-filter: blur(10px);
           filter: blur(10px);
@@ -381,38 +349,31 @@ This class is added to the container
     filter: blur(1px);
     -webkit-filter: url(#blurLogo);
     filter: url(#blurLogo);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius="1");
   }
 }
-
 @keyframes blur {
   66% {
     -webkit-filter: blur(1px);
     filter: blur(1px);
     -webkit-filter: url(#blurLogo);
     filter: url(#blurLogo);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius="1");
   }
 }
-
 #menu #menu_top {
   background-color: #F2F2F2;
 }
-
 #menu #menu_top img.menu_logo {
   height: 50px;
 }
-
 #menu #menu_top ul.menu-search {
   display: block;
   height: 46px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   list-style: none;
   width: 100%;
 }
-
 #menu #menu_top ul.menu-search li input {
   height: 49px;
   width: 100%;
@@ -425,7 +386,6 @@ This class is added to the container
   color: #333333;
   border: none;
 }
-
 #menu #menu_top ul.menu-search li a {
   padding: 15px;
   background-color: #f2b142;
@@ -441,51 +401,40 @@ This class is added to the container
   height: 47px;
   float: left;
 }
-
 #menu #menu_logo_center img {
   width: inherit;
 }
-
 #menu #menu_bottom {
   background-color: green;
 }
-
 #menu #menu_bottom .is_active {
   background-color: #f2b142;
 }
-
 #menu #menu_bottom ul.main_menu {
   display: block;
 }
-
 #menu #menu_bottom ul.main_menu li {
   display: inline-block;
   padding: 15px;
   position: relative;
 }
-
 #menu #menu_bottom ul.main_menu li i {
   color: white;
   font-size: 16px;
   padding-right: 6px;
 }
-
 #menu #menu_bottom ul.main_menu li a {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
 }
-
 #menu #menu_bottom ul.main_menu li:hover {
   background-color: #f2b142;
 }
-
 #menu #menu_bottom ul.main_menu li.has-item-down {
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 #menu #menu_bottom ul.main_menu li.has-item-down ul {
   position: absolute;
   opacity: 0;
@@ -496,36 +445,27 @@ This class is added to the container
   z-index: 9;
   width: 160%;
 }
-
 #menu #menu_bottom ul.main_menu li.has-item-down ul li {
   display: block;
   padding-left: 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 #menu #menu_bottom ul.main_menu li.has-item-down ul li:hover {
   padding-left: 20px;
 }
-
 #menu #menu_bottom ul.main_menu li.has-item-down:hover > ul {
   display: block;
   opacity: 1;
 }
-
 #menu #menu_bottom ul.main_menu ul.menu-search {
   display: block;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   list-style: none;
   width: 100%;
 }
-
 #menu #menu_bottom ul.main_menu ul.menu-search li.li-search {
   padding: 0;
 }
-
 #menu #menu_bottom ul.main_menu ul.menu-search li.li-search input {
   height: 46px;
   width: 100%;
@@ -539,7 +479,6 @@ This class is added to the container
   border: 1px solid #019934;
   border-left: none;
 }
-
 #menu #menu_bottom ul.main_menu ul.menu-search li.li-search a {
   padding: 16px;
   background-color: #f2b142;

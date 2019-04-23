@@ -1,0 +1,25 @@
+.wrap-text {
+  .one-text {
+    .remove-text {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border-radius: 2px;
+      border: none;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.add-more {
+  text-align: center;
+  padding-bottom: 20px;
+  button.add-more-text {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    text-transform: capitalize;
+  }
+}

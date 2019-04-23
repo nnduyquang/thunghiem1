@@ -89,6 +89,10 @@ Route::group(['middleware' => ['auth']], function () {
     //COMPONENTS
     Route::get('sml_admin/components', ['as' => 'components.index', 'uses' => 'ComponentsController@index']);
     Route::get('sml_admin/components/create', ['as' => 'components.create', 'uses' => 'ComponentsController@create']);
+    Route::post('sml_admin/components/create', ['as' => 'components.store', 'uses' => 'ComponentsController@store']);
+    Route::get('sml_admin/components/{id}/edit', ['as' => 'components.edit', 'uses' => 'ComponentsController@edit']);
+    Route::patch('sml_admin/components/{id}', ['as' => 'components.update', 'uses' => 'ComponentsController@update']);
+    Route::delete('sml_admin/componentsm/{id}', ['as' => 'components.destroy', 'uses' => 'ComponentsController@destroy']);
     //CONFIG
     //------GENERAL
 

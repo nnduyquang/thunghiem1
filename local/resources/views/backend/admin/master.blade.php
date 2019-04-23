@@ -26,10 +26,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
             </li>
             {{--<li class="nav-item d-none d-sm-inline-block">--}}
-                {{--<a href="index3.html" class="nav-link">Home</a>--}}
+            {{--<a href="index3.html" class="nav-link">Home</a>--}}
             {{--</li>--}}
             {{--<li class="nav-item d-none d-sm-inline-block">--}}
-                {{--<a href="#" class="nav-link">Contact</a>--}}
+            {{--<a href="#" class="nav-link">Contact</a>--}}
             {{--</li>--}}
         </ul>
 
@@ -54,7 +54,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Brand Logo -->
         <a href="#" class="brand-link">
             {{--<img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"--}}
-                 {{--style="opacity: .8">--}}
+            {{--style="opacity: .8">--}}
             <span class="brand-text font-weight-light">Quản Trị Hệ Thống</span>
         </a>
 
@@ -104,64 +104,64 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="content">
             <div class="container-fluid">
 
-                @yield('container')
-                    {{--<div class="col-lg-6">--}}
-                        {{--<div class="card">--}}
-                            {{--<div class="card-body">--}}
-                                {{--<h5 class="card-title">Card title</h5>--}}
+            @yield('container')
+            {{--<div class="col-lg-6">--}}
+            {{--<div class="card">--}}
+            {{--<div class="card-body">--}}
+            {{--<h5 class="card-title">Card title</h5>--}}
 
-                                {{--<p class="card-text">--}}
-                                    {{--Some quick example text to build on the card title and make up the bulk of the card's--}}
-                                    {{--content.--}}
-                                {{--</p>--}}
+            {{--<p class="card-text">--}}
+            {{--Some quick example text to build on the card title and make up the bulk of the card's--}}
+            {{--content.--}}
+            {{--</p>--}}
 
-                                {{--<a href="#" class="card-link">Card link</a>--}}
-                                {{--<a href="#" class="card-link">Another link</a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+            {{--<a href="#" class="card-link">Card link</a>--}}
+            {{--<a href="#" class="card-link">Another link</a>--}}
+            {{--</div>--}}
+            {{--</div>--}}
 
-                        {{--<div class="card card-primary card-outline">--}}
-                            {{--<div class="card-body">--}}
-                                {{--<h5 class="card-title">Card title</h5>--}}
+            {{--<div class="card card-primary card-outline">--}}
+            {{--<div class="card-body">--}}
+            {{--<h5 class="card-title">Card title</h5>--}}
 
-                                {{--<p class="card-text">--}}
-                                    {{--Some quick example text to build on the card title and make up the bulk of the card's--}}
-                                    {{--content.--}}
-                                {{--</p>--}}
-                                {{--<a href="#" class="card-link">Card link</a>--}}
-                                {{--<a href="#" class="card-link">Another link</a>--}}
-                            {{--</div>--}}
-                        {{--</div><!-- /.card -->--}}
-                    {{--</div>--}}
-                    {{--<!-- /.col-md-6 -->--}}
-                    {{--<div class="col-lg-6">--}}
-                        {{--<div class="card">--}}
-                            {{--<div class="card-header">--}}
-                                {{--<h5 class="m-0">Featured</h5>--}}
-                            {{--</div>--}}
-                            {{--<div class="card-body">--}}
-                                {{--<h6 class="card-title">Special title treatment</h6>--}}
+            {{--<p class="card-text">--}}
+            {{--Some quick example text to build on the card title and make up the bulk of the card's--}}
+            {{--content.--}}
+            {{--</p>--}}
+            {{--<a href="#" class="card-link">Card link</a>--}}
+            {{--<a href="#" class="card-link">Another link</a>--}}
+            {{--</div>--}}
+            {{--</div><!-- /.card -->--}}
+            {{--</div>--}}
+            {{--<!-- /.col-md-6 -->--}}
+            {{--<div class="col-lg-6">--}}
+            {{--<div class="card">--}}
+            {{--<div class="card-header">--}}
+            {{--<h5 class="m-0">Featured</h5>--}}
+            {{--</div>--}}
+            {{--<div class="card-body">--}}
+            {{--<h6 class="card-title">Special title treatment</h6>--}}
 
-                                {{--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>--}}
-                                {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+            {{--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>--}}
+            {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+            {{--</div>--}}
+            {{--</div>--}}
 
-                        {{--<div class="card card-primary card-outline">--}}
-                            {{--<div class="card-header">--}}
-                                {{--<h5 class="m-0">Featured</h5>--}}
-                            {{--</div>--}}
-                            {{--<div class="card-body">--}}
-                                {{--<h6 class="card-title">Special title treatment</h6>--}}
+            {{--<div class="card card-primary card-outline">--}}
+            {{--<div class="card-header">--}}
+            {{--<h5 class="m-0">Featured</h5>--}}
+            {{--</div>--}}
+            {{--<div class="card-body">--}}
+            {{--<h6 class="card-title">Special title treatment</h6>--}}
 
-                                {{--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>--}}
-                                {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<!-- /.col-md-6 -->--}}
-                {{--</div>--}}
-                <!-- /.row -->
+            {{--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>--}}
+            {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+            {{--</div>--}}
+            {{--</div>--}}
+            {{--</div>--}}
+            {{--<!-- /.col-md-6 -->--}}
+            {{--</div>--}}
+            <!-- /.row -->
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->
@@ -185,7 +185,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2018 <a href="http://smartlinks.vn">www.smartlinks.vn</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2018 <a href="http://smartlinks.vn">www.smartlinks.vn</a>.</strong> All rights
+        reserved.
     </footer>
 </div>
 <!-- ./wrapper -->
@@ -203,5 +204,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
 {{ Html::script('js/core.backend.js') }}
 {{ Html::script('js/ckeditor/ckeditor.js') }}
 {{ Html::script('js/backend.js') }}
+<script>
+    $('button.add-more-text').click(function () {
+        var html = '<div class="one-text">\n' +
+            '                                    <div class="row">\n' +
+            '                                        <div class="col-md-9">\n' +
+            '                                            <div class="form-group">\n' +
+            '                                                <strong class="text-title-left">Variable</strong>\n' +
+            '\n' +
+            '                                                <input class="form-control" id="" name="variable[]" type="text">\n' +
+            '                                                <strong class="text-title-left">Giá trị</strong>\n' +
+            '\n' +
+            '                                                <textarea placeholder="" id="" class="form-control" rows="3" style="resize:none" name="text[]" cols="50"></textarea>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-md-2 d-flex justify-content-center align-items-center">\n' +
+            '                                            <button type="button" class="remove-text">X</button>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </div>';
+        $('.wrap-text').append(html);
+        $('button.remove-text').click(function(){
+            $(this).parent().parent().remove();
+        });
+    });
+    $('button.remove-text').click(function(){
+        $(this).parent().parent().remove();
+    });
+    $($("input[name='has_static_text']").click(function(){
+        if($("input[name='has_static_text']").is(':checked')){
+            $('.text-info').css('display','block');
+        }
+        else{
+            $('.text-info').css('display','none');
+        }
+    }));
+
+</script>
 </body>
 </html>

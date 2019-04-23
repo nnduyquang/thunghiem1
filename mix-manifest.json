@@ -1,15 +1,15 @@
 {
-    "/ss/frontend.css": "/ss/frontend.css",
-    "/ss/backend.css": "/ss/backend.css",
-    "/s/core.common.js": "/s/core.common.js",
-    "/ss/core.common.css": "/ss/core.common.css",
-    "/s/core.frontend.js": "/s/core.frontend.js",
-    "/s/core.backend.js": "/s/core.backend.js",
-    "/ss/core.frontend.css": "/ss/core.frontend.css",
-    "/ss/core.backend.css": "/ss/core.backend.css",
-    "/s/scripts.js": "/s/scripts.js",
-    "/ss/login.css": "/ss/login.css",
-    "/s/login.js": "/s/login.js",
-    "/s/ulti.js": "/s/ulti.js",
-    "/s/backend.js": "/s/backend.js"
+    "/css/frontend.css": "/css/frontend.css",
+    "/css/backend.css": "/css/backend.css",
+    "/js/core.common.js": "/js/core.common.js",
+    "/css/core.common.css": "/css/core.common.css",
+    "/js/core.frontend.js": "/js/core.frontend.js",
+    "/js/core.backend.js": "/js/core.backend.js",
+    "/css/core.frontend.css": "/css/core.frontend.css",
+    "/css/core.backend.css": "/css/core.backend.css",
+    "/js/scripts.js": "/js/scripts.js",
+    "/css/login.css": "/css/login.css",
+    "/js/login.js": "/js/login.js",
+    "/js/ulti.js": "/js/ulti.js",
+    "/js/backend.js": "/js/backend.js"
 }
