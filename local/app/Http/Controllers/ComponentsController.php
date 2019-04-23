@@ -2,10 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Backend\Components\ComponentsRepositoryInterface;
 use Illuminate\Http\Request;
 
 class ComponentsController extends Controller
 {
+    protected $componentRepository;
+
+    public function __construct(ComponentsRepositoryInterface $componentRepository)
+    {
+        $this->componentRepository = $componentRepository;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +20,9 @@ class ComponentsController extends Controller
      */
     public function index()
     {
-        //
+//        $components = $this->componentRepository->getAllPostOrderById($type);
+
+        return view('backend.admin.components.index', compact('posts'));
     }
 
     /**
@@ -23,7 +32,7 @@ class ComponentsController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.admin.components.create', compact('roles'));
     }
 
     /**

@@ -58,7 +58,7 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="pages/charts/chartjs.html" class="nav-link">
+                    <a href="{{ route('components.index') }}" class="nav-link {{ set_active('sml_admin/components') }}">
                         <i class="fa fa-link nav-icon"></i>
                         <p>Components</p>
                     </a>

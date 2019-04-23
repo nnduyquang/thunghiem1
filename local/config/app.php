@@ -188,6 +188,7 @@ return [
         App\Providers\CategoryItemServiceProvider::class,
         App\Providers\PageServiceProvider::class,
         App\Providers\ConfigServiceProvider::class,
+        App\Providers\ComponentServiceProvider::class,
 
     ],
 
