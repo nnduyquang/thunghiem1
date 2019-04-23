@@ -86,6 +86,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::patch('sml_admin/san-pham/{id}', ['as' => 'product.update', 'uses' => 'ProductController@update', 'middleware' => ['permission:product-edit']]);
     Route::delete('sml_admin/san-pham/{id}', ['as' => 'product.destroy', 'uses' => 'ProductController@destroy', 'middleware' => ['permission:product-delete']]);
 
+    //COMPONENTS
+    Route::get('sml_admin/components', ['as' => 'components.index', 'uses' => 'ComponentsController@index']);
+    Route::get('sml_admin/components/create', ['as' => 'components.create', 'uses' => 'ComponentsController@create']);
     //CONFIG
     //------GENERAL
 
