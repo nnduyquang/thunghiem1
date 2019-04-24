@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Component extends Model
+class ComponentStaticText extends Model
 {
     protected $fillable = [
-        'name', 'title', 'image','has_static_text'
+        'id_component', 'text', 'variable'
     ];
-    public function prepareParameters($parameters)
+    public function prepareParameters($id,$parameters)
     {
         if ($parameters->input('has_static_text')) {
             if(!array_filter($parameters->input('variable')))

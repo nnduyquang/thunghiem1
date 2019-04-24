@@ -57,9 +57,9 @@
                             </div>
                         </div>
                         <div class="wrap-create-edit">
-                            {{ Form::checkbox('has_static_text',null,false, array('class'=>'')) }} Có text tĩnh không?
+                            {{ Form::checkbox('has_static_text',null,$component->has_static_text==0?false:true, array('class'=>'')) }} Có text tĩnh không?
                         </div>
-                        <div class="text-info wrap-create-edit" style="display: none">
+                        <div class="text-info wrap-create-edit" style="display: {{$component->has_static_text==0?'none':'block'}}">
                             <div class="wrap-text">
                                 <div class="one-text">
                                     <div class="row">
@@ -90,7 +90,7 @@
 
         </div>
         <div class="col-md-12" style="text-align:  center;">
-            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Cập Nhật Trang</button>
+            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Cập Nhật Component</button>
         </div>
     {!! Form::close() !!}
 

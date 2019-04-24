@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 23, 2019 lúc 11:57 AM
+-- Thời gian đã tạo: Th4 24, 2019 lúc 12:07 PM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -106,7 +106,7 @@ CREATE TABLE `components` (
 --
 
 INSERT INTO `components` (`id`, `name`, `title`, `image`, `has_static_text`, `created_at`, `updated_at`) VALUES
-(1, 'com_1.blade.php', 'Chào mừng đến Sea Wedding', NULL, 0, '2019-04-23 07:32:15', '2019-04-23 07:32:15');
+(1, 'com_1.blade.php', 'Chào mừng đến Sea Wedding', NULL, 1, '2019-04-23 07:32:15', '2019-04-24 02:52:52');
 
 -- --------------------------------------------------------
 

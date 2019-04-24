@@ -82,7 +82,8 @@ class ComponentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->componentRepository->updateComponent($request, $id);
+        return redirect()->route('components.index')->with('success', 'Cập Nhật Thành Công Component');
     }
 
     /**

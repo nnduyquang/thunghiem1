@@ -9,4 +9,6 @@ interface ComponentsRepositoryInterface
     public function getAllComponents();
 
     public function showEditComponent($id);
+
+    public function updateComponent($request, $id);
 }
